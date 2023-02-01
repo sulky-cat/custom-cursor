@@ -1,6 +1,7 @@
 # Custom cursor
 
 [Демо страница](https://sulky-cat.github.io/custom-cursor/demo)
+[Демо страница 2](https://sulky-cat.github.io/custom-cursor/demo/custom.html)
 
 ---
 
