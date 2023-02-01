@@ -23,7 +23,7 @@ new Cursor()
 * `targetElement` - елемент, над которым находится курсор;
 * `hoverElement` - элемент, над которым находится курсор, указанный в настройке `selectorHoverElement`. Если курсор не над этим элементом, то это свойство равно `false`
 
-*Пример* 
+**Пример**
 ```js
 const cursor = new Cursor({
 	selectorHoverElement: 'a, [data-hover], button, input',
