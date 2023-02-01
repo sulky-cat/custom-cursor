@@ -26,19 +26,19 @@ new Cursor()
 **Пример**
 ```js
 const cursor = new Cursor({
-	selectorHoverElement: 'a, [data-hover], button, input',
-	onfocus: (e) => {
-		console.log('focus')
+   selectorHoverElement: 'a, [data-hover], button, input',
+   onfocus: (e) => {
+      console.log('focus')
 
-		cursor.hoverElement.classlist.add('new-hover-class')
-	},
-	onblur: (e) => {
-		console.log('blur')
+      cursor.hoverElement.classlist.add('new-hover-class')
+   },
+   onblur: (e) => {
+      console.log('blur')
 
-		if (cursor.hoverElement) {
-			cursor.hoverElement.classlist.remove('new-hover-class')
-		}
-	}
+      if (cursor.hoverElement) {
+         cursor.hoverElement.classlist.remove('new-hover-class')
+      }
+   }
 })
 
 console.log(cursor.element) // Елемент кастомного курсора
