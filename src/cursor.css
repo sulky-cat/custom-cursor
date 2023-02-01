@@ -1,0 +1,38 @@
+* {
+	cursor: none !important;
+}
+.cursor {
+	--top: 0;
+	--left: 0;
+
+	z-index: 100;
+
+	pointer-events: none;
+	position: fixed;
+
+	top: calc(var(--top) - 4px);
+	left: calc(var(--left) - 4px);
+
+	will-change: top, left, transform;
+	opacity: 0;
+
+	width: 8px;
+	height: 8px;
+	border-radius: 4px;
+	background-color: rgb(201, 205, 0);
+
+	transition-property: background-color, transform, opacity;
+	transition-duration: 0.2s;
+}
+
+._mouse-over-document_ .cursor {
+	opacity: 1;
+}
+
+.cursor._mousedown_ {
+	background-color: rgb(205, 85, 0);
+}
+.cursor._hover_ {
+	transform: scale(3);
+	opacity: 0.7;
+}
